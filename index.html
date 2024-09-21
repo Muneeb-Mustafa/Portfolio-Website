@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <!-- Favicon link -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <!-- Bootstrap 5 cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <!-- font awesom cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive-style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="75">
+    <header class="header-wrapper">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" class="img-fluid" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item mt-3 mt-lg-0" id="hire">
+                <a class="main-btn" href="#contact">Hire me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <!-- Banner Section -->
+    <section id="home" class="banner-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center text-md-start">
+            <h6>WELCOME TO MY Website</h6>
+            <h1>I'm Muneeb Mustafa</h1><h1><span id="element"></span></h1><h1>based in Pakistan.</h1>
+            
+            <div class="mt-4">
+              <a class="main-btn" href="">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-wrapper">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg mb-5 mb-4  mb-lg-0">
+                    <img src="images/about.jpg" class="img-fluid rounded-3" alt="About us">
+                </div>
+                <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+                    <div class="my-3 my-lg-0">
+                        <span class="subtitle">My About Details</span>
+                        <h2>About Me</h2>
+                        <p>I am Muneeb Mustafa, a Mern Stack Developer. I have 2 years of Experience in developing and creating business websites, Ecommerce Websites and Web or Mobile Apps etc.</p>                        
+                    </div>
+                    <div class="pt-4 ">
+                        <ul class="nav nav-pills  justify-content-center justify-content-lg-between skill" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill" aria-selected="true">Main Skills</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-award-tab" data-bs-toggle="pill" data-bs-target="#pills-award" type="button" role="tab" aria-controls="pills-award" aria-selected="false">Awards</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-experience-tab" data-bs-toggle="pill" data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience" aria-selected="false">Experience</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education" aria-selected="false">Education</button>
+                            </li>
+                          </ul>
+                          <!-- Tab No 1 -->
+                          <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab" tabindex="0">
+                                <div class="single-progress">
+                                    <h6>HTML5</h6>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 90%"></div>
+                                      </div>
+                                      <span class="label">90%</span>
+                                </div>
+                                <div class="single-progress">
+                                  <h6>CSS3</h6>
+                                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                  </div>
+                                  <span class="label">85%</span>
+                                </div>
+                                <div class="single-progress">
+                                  <h6>JAVASCRIPT</h6>
+                                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                  </div>
+                                  <span class="label">80%</span>
+                                </div>
+                                <div class="single-progress">
+                                    <h6>React</h6>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                      </div>
+                                      <span class="label">70% </span>
+                                </div>
+                              </div>
+                          <!-- Tab No 2 -->
+
+                            <div class="tab-pane fade" id="pills-award" role="tabpanel" aria-labelledby="pills-award-tab" tabindex="0">
+                                <ul class="text-start ps-0">
+                                  <!-- <li>
+                                      <a href="#">CSS3 Designer
+                                          <span>- Winner</span></a> 2017 - 2018
+                                  </li>
+                                    <li>
+                                        <a href="#">UI & UX Designer
+                                            <span>- Winner</span></a> 2019 - 2020
+                                    </li>
+                                    <li>
+                                        <a href="#">Javascript Development
+                                            <span>- SMIT</span></a> 2021 - 2022
+                                    </li> -->
+                                    <li>
+                                        <a href="#">React Developer
+                                            <span></span></a> 2023 - Current
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- Tab No 3 -->
+
+                            <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab" tabindex="0">
+                                <ul class="text-start ps-0">
+                                    <li>
+                                        <a href="#">Front-End Developer
+                                            <span>- SMIT</span></a> 2023 - Current
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#">Backened-end Developer
+                                            <span>- SMIT</span></a> 2023 - 2024
+                                    </li>
+                                    <li>
+                                        <a href="#">Web & Mobile App Developer
+                                            <span>- SMIT</span></a> 2023 - 2024
+                                    </li>
+                                    <li>
+                                        <a href="#">Mern Stack Developer
+                                            <span>- SMIT</span></a> 2023 - 2024
+                                    </li> -->
+
+                                </ul>
+                            </div>
+                        <!-- Tab No 4 -->
+
+                            <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab" tabindex="0">
+                                <ul class="text-start ps-0">
+                                    <li>
+                                        <a href="#">Bsc Computer Science
+                                            <span>- University of Agriculture</span></a> 2023 - Current
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#">MS in Artificial Intelligence
+                                            <span>- FAAST</span></a> 2024
+                                    </li>
+                                    <li>
+                                        <a href="#">Web & Mobile App Developer
+                                            <span>- SMIT</span></a> 2023 - 2024
+                                    </li> -->
+                                    <!-- <li>
+                                        <a href="#">Data Scientist
+                                            <span>- IBM</span></a> 2023 - 2024
+                                    </li> -->
+                                </ul>
+                            </div>
+
+                            
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Services Section -->
+<section id="services" class="services-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center mb-4">
+        <span class="subtitle">What I can do for you?</span>
+        <h2>My Awesome Services</h2>
+        <p>Clients satisfaction is always my first priority and it will be always.<br class="d-none d-md-block"> If you have a project contact me. </p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body text-md-start text-center">
+            <img src="./images/service/service-2.svg" alt="service" class="img-fluid mb-4">
+            <h3>WEB DESIGN</h3>
+            <p>I've design 50+ websites in last 2 years. I've worked on UI, React, React Native, Firebase and many more..</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+        <div class="card-body text-md-start text-center">
+          <img src="./images/service/service-2.svg" alt="service" class="img-fluid mb-4">
+          <h3>Website Development</h3>
+          <p>My commitment is to provide the Business & Ecommerce Websites with Social Media integration and Mobile Apps.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <div class="card-body text-md-start text-center">
+          <img src="./images/service/service-3.svg" alt="service" class="img-fluid mb-4">
+          <h3>Mobile App Development</h3>
+          <p>I provide quality iOS, Android and Hybrid mobile development services all under one roof.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body text-md-start text-center">
+            <img src="./images/service/service-3.svg" alt="service" class="img-fluid mb-4">
+            <h3>Responsive Design</h3>
+            <p>I design responsive websites that adapts to the size of mobile, tablet or desktop devices.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body text-md-start text-center">
+            <img src="./images/service/service-4.svg" alt="service" class="img-fluid mb-4">
+            <h3>UI/UX DESIGN</h3>
+            <p>I'm proficient in interface design of web and mobile applications (Android and iOS). Please visit portfolio section.</p>
+          </div>
+        </div>
+      </div>
+    <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body text-md-start text-center">
+            <img src="./images/service/service-1.svg" alt="service" class="img-fluid mb-4">
+            <h3>MARKETING SERVICES</h3>
+            <p>Helping businesses get more customers by promoting their products or services in smart ways.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center mb-4">
+        <span class="subtitle">My Completed Projects</span>
+        <h2>My Latest Project</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit<br class="d-none d-md-block"> totam natus asperiores nihil. </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-0">
+          <span style="background-image: url('./images/Portfolio/Foodies.png')"></span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-0">
+          <span style="background-image: url('./images/Portfolio/App-Landing-Page.png')"></span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-0">
+          <span style="background-image: url('./images/Portfolio/E-Commerce-Website-Using-Bootstap-5.png')"></span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-0">
+          <span style="background-image: url('./images/Portfolio/Christmas-Landing-Page.png')"></span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-0">
+          <span style="background-image: url('./images/Portfolio/Ecommerce-Jewellery-Website.png')"></span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-0">
+          <span style="background-image: url('./images/Portfolio/HeadPhones.png')"></span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-0">
+          <span style="background-image: url('./images/Portfolio/Pizza-Landing-Page.png')"></span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-0">
+          <span style="background-image: url('./images/Portfolio/Hashtag-Landing-Page.png')"></span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+<!-- Contact Us Section -->
+   <section id="contact" class="contact-wrapper">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-6  order-2 order-lg-1 pe-lg-5 text-lg-start text-center">
+          <span class="subtitle">My Completed Projects</span>
+          <h2>Hire Me.</h2>
+          <div class="row call_details mb-4">
+            <label class="col-sm-3 col-lg-4">Call us directly:</label>
+            
+            <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+              <a href="javascript:void(0)">+92 327-0501821</a>
+            </div>
+
+            <label class="col-sm-3 col-lg-4">Contact Email:</label>
+
+            <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+              <a href="mailto:muneeb.mustafa080@gmail.com">muneeb.mustafa080@gmail.com</a>
+            </div>
+
+          </div>
+
+          <form>
+            <div class="mb-3">
+              <!-- <label for="exampleInputPassword1" class="form-label">Your Name</label> -->
+              <input type="text" class="form-control p-2" id="exampleInputtext" placeholder="Name...">
+            </div>
+            <div class="mb-3">
+              <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email...">
+              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class="mb-3">
+              <!-- <label for="exampleInputPassword1" class="form-label">Your Phone</label> -->
+              <input type="tel" class="form-control p-2" id="exampleInputtext" placeholder="Phone No...">
+            </div>
+            <div class="mb-3">
+              <!-- <label for="exampleFormControlTextarea1" class="form-label">Message</label> -->
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message..."></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I agreed to the terms & conditions.</label>
+            </div>
+            <button type="submit" class="main-btn">Submit</button>
+          </form>
+        </div>
+        <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0">
+          <img src="./images/contact.jpg" alt="Contact" class="img-fluid">
+
+        </div>
+      </div>
+    </div>
+   </section>
+
+<!-- Footer Section -->
+<section id="contact" class="footer-wrapper mt-3 mt-md-0">
+  <div class="conatainer">
+    <div class="row align-items-center">
+      <div class="col-lg-4 col-md-6 text-center text-md-center">
+        <div class="footer-logo mb-3 mb-md-0">
+          <img src="images/logo.png" alt="Logo" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <ul class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center social-icon mb-3 mb-md-0">
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+     </div>
+     
+     <div class="col-lg-4 col-md-12">
+      <div class="copyright-text text-lg-start text-center mb-lg-0">
+        <p class="mb-0">Copyright &copy; 2024 <a href="#">Muneeb.net</a>. All Rights Reserved.</p>
+      </div>
+     </div>
+
+  </div>
+  </div>
+
+</section>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
+<!-- Setup and start animation! -->
+<script>
+var typed = new Typed('#element', {
+ strings: ['Front End Developer', 'Web and Mobile App Developer', 'Web and Mobile App Designer', 'UI/UX Designer'],
+ typeSpeed: 60,
+});
+</script>  
+
+    <!-- Bootstrap cdn js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom js link -->
+    <script src="Js/main.js"></script>
+  </body>
+</html>
