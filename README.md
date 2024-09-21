@@ -20,8 +20,8 @@ Contact
 Feel free to reach out if you have any questions, suggestions, or feedback!
 
 Email: muneeb.m.dev@gmail.com
-GitHub: Muneeb-Mustafa
-LinkedIn: Muneeb Mustafa
+GitHub: https://github.com/Muneeb-Mustafa
+LinkedIn:https://www.linkedin.com/in/muneeb-mustafa-086a14264/
 License
 This project is licensed under the MIT License.
 
